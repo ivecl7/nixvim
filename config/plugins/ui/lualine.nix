@@ -1,4 +1,4 @@
-_: {
+{
   plugins.lualine = {
     enable = true;
     settings = {
@@ -15,6 +15,8 @@ _: {
           ];
         };
         theme = "catppuccin";
+        component_separators = "";
+        section_separators = "";
       };
       sections = {
         lualine_a = [
