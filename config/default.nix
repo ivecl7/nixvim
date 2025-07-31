@@ -56,5 +56,6 @@ _: {
     ./plugins/utils/flash.nix
     ./plugins/utils/highlight-colors.nix
     ./plugins/utils/oil.nix
+    ./plugins/utils/vimtex.nix
   ];
 }

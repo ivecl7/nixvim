@@ -11,7 +11,7 @@ You can use this flake as an input:
 ```nix
 {
     inputs = {
-        nixvim.url = "github:ivecl7/nixvim"
+        nixvim.url = "github:ivecl7/nixvim?ref=feat-vimtex"
     };
 }
 ```
