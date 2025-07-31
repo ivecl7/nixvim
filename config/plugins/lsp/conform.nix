@@ -88,6 +88,7 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
+          cpp = [ "clang-format" ];
           javascript = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
@@ -116,18 +117,27 @@
           };
           terraform = [ "terraform_fmt" ];
           bicep = [ "bicep" ];
+          sh = [
+            "shellcheck"
+            "shellharden"
+            "shfmt"
+          ];
           bash = [
             "shellcheck"
             "shellharden"
             "shfmt"
           ];
           json = [ "jq" ];
+          rust = [ "rustfmt" ];
           "_" = [ "trim_whitespace" ];
         };
 
         formatters = {
           black = {
             command = "${lib.getExe pkgs.black}";
+          };
+          clang-format = {
+            command = "${pkgs.clang-tools}/bin/clang-format";
           };
           isort = {
             command = "${lib.getExe pkgs.isort}";

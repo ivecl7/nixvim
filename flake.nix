@@ -42,12 +42,23 @@
           nixvimModule = {
             inherit pkgs;
             module = import ./config; # import the module directly
+            # extraPackages = with pkgs; [ rustfmt ];
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
             };
           };
-          nvim = nixvim'.makeNixvimWithModule nixvimModule;
+          nvim =
+            let
+              withExtraPackages =
+                pkg: extraPackages:
+                pkgs.runCommand "nvim" { nativeBuildInputs = [ pkgs.makeWrapper ]; } ''
+                  for exe in ${lib.getBin pkg}/bin/*; do
+                    makeWrapper $exe $out/bin/$(basename $exe) --prefix PATH : ${lib.makeBinPath extraPackages}
+                  done
+                '';
+            in
+            withExtraPackages (nixvim'.makeNixvimWithModule nixvimModule) [ pkgs.rustfmt ];
         in
         {
           checks = {
