@@ -58,5 +58,6 @@ _: {
     ./plugins/utils/highlight-colors.nix
     ./plugins/utils/oil.nix
     ./plugins/utils/persistence.nix
+    ./plugins/utils/vimtex.nix
   ];
 }
