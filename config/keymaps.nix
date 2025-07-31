@@ -387,15 +387,15 @@
         desc = "Hide Terminal";
       };
     }
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        desc = "Other Window";
-        remap = true;
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ww";
+    #   action = "<C-W>p";
+    #   options = {
+    #     desc = "Other Window";
+    #     remap = true;
+    #   };
+    # }
     {
       mode = "n";
       key = "<leader>wd";
@@ -487,6 +487,32 @@
       action = "<cmd>tabprevious<cr>";
       options = {
         desc = "Previous Tab";
+      };
+    }
+    {
+      mode = "v";
+      key = "<leader>y";
+      action = ''
+        "+y
+      '';
+      options = {
+        desc = "Copy to clipboard";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>p";
+      action = ":bp<CR>";
+      options = {
+        desc = "Prev buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>n";
+      action = ":bn<CR>";
+      options = {
+        desc = "Next buffer";
       };
     }
   ];
