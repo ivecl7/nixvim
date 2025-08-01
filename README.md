@@ -96,6 +96,10 @@ home-manager.users.<user>.home.packages = [
 - `obsidian.nix`: Confiugres the Obsidian plugin, for note-taking purposes.
 - `markdown-preview.nix`: Configures the Markdown Preview plugin.
 - `toggleterm.nix`: Configures Terminal plugin.
+- `vimwiki.nix`: Confiugres the Vimwiki plugin, for note-taking purposes.
+- `flash.nix`: Confiugres the Flash plugin for navigating code.
+- `highlight-colors.nix`: Confiugres the nvim-highlight-colors plugin for realtime color highlighting.
+- `oil.nix`: Confiugres the Oil plugin.
 
 Please refer to the individual `.nix` files for more detailed configuration information.
 
