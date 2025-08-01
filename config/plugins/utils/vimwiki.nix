@@ -5,8 +5,8 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "ivecl7";
       repo = "vimwiki";
-      rev = "4b5c439d7143b898e9cea994c868c944fae51262";
-      hash = "sha256-dgJ418ZqLFe3i71IPiSNRdmD9URUtoEsnOIBlCnftf0=";
+      rev = "e5b75e9e5e05427bd89bec8517532ab1c53d7a23";
+      hash = "sha256-ySWNHQSe1NKIywUN8wgDbwxJjdXdQBzBu+CLf2p7wOA=";
     };
   };
 in
