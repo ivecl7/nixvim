@@ -26,6 +26,7 @@
           ];
         };
         sources = [
+          { name = "cmp_ai"; }
           {
             name = "git";
             option = {
