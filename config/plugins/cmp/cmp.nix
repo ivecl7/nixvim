@@ -26,6 +26,7 @@
           ];
         };
         sources = [
+          { name = "minuet"; }
           {
             name = "git";
             option = {

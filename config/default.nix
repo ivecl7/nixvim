@@ -15,6 +15,7 @@ _: {
     ./plugins/cmp/lspkind.nix
     ./plugins/cmp/autopairs.nix
     ./plugins/cmp/schemastore.nix
+    ./plugins/cmp/minuet.nix
 
     # Snippets
     ./plugins/snippets/luasnip.nix
