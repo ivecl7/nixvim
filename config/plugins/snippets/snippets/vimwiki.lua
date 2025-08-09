@@ -56,6 +56,7 @@ return {
 	s({ trig = "Phi", snippetType = "autosnippet", priority = 2000 }, { t("\\Phi"), i(1) }, {}),
 	s({ trig = "Sigma", snippetType = "autosnippet", priority = 2000 }, { t("\\Sigma"), i(1) }, {}),
 	s({ trig = "Theta", snippetType = "autosnippet", priority = 2000 }, { t("\\Theta"), i(1) }, {}),
+	s({ trig = "cdot", snippetType = "autosnippet", priority = 2000 }, { t("\\cdot "), i(1) }, {}),
 	-- II. Auto add "\" and add "()" or "{}""
 	s({ trig = "sin", snippetType = "autosnippet", priority = 2000 }, fmta("\\sin(<>)<>", { i(1), i(2) }), {}),
 	s({ trig = "cos", snippetType = "autosnippet", priority = 2000 }, fmta("\\cos(<>)<>", { i(1), i(2) }), {}),
@@ -64,7 +65,7 @@ return {
 	s({ trig = "sec", snippetType = "autosnippet", priority = 2000 }, fmta("\\sec(<>)<>", { i(1), i(2) }), {}),
 	s({ trig = "cot", snippetType = "autosnippet", priority = 2000 }, fmta("\\cot(<>)<>", { i(1), i(2) }), {}),
 	s({ trig = "ln", snippetType = "autosnippet", priority = 2000 }, fmta("\\ln(<>)<>", { i(1), i(2) }), {}),
-	s({ trig = "mathbf", snippetType = "autosnippet", priority = 2000 }, fmta("\\mathbf{<>}<>", { i(1), i(2) }), {}),
+	s({ trig = "mbf", snippetType = "autosnippet", priority = 2000 }, fmta("\\mathbf{<>}<>", { i(1), i(2) }), {}),
 	-- II.j happy reduplicated word
 	s({ trig = "ii", snippetType = "autosnippet", priority = 2000 }, fmta("$<>$<>", { i(1), i(2) }), {}),
 	s({ trig = "fp", snippetType = "autosnippet", priority = 2000 }, fmta("f(<>)<>", { i(1), i(2) }), {}),
@@ -94,9 +95,9 @@ return {
 		{ trig = "leri", snippetType = "autosnippet", priority = 2000 },
 		c(1, {
 			fmta("\\left(<>\\right)<>", { i(1), i(2) }),
-			fmta("\\left{<>\\right}<>", { i(1), i(2) }),
+			fmta("\\left\\{<>\\right\\}<>", { i(1), i(2) }),
 			fmta("\\left(<>\\right.<>", { i(1), i(2) }),
-			fmta("\\left{<>\\right.<>", { i(1), i(2) }),
+			fmta("\\left\\{<>\\right.<>", { i(1), i(2) }),
 		}),
 		{}
 	),
