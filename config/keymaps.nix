@@ -515,5 +515,14 @@
         desc = "Next buffer";
       };
     }
+    {
+      mode = "n";
+      key = "dm<Space>";
+      action = ":delm!<CR>";
+      options = {
+        desc = "Delete all marks";
+        silent = true;
+      };
+    }
   ];
 }
