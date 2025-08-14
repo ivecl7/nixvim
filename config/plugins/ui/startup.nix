@@ -57,6 +57,11 @@
             "fe"
           ]
           [
+            "↩️ Last Session"
+            "lua require('persistence').load({last=true})"
+            "ql"
+          ]
+          [
             "󰧑 SecondBrain"
             "VimwikiIndex"
             "ww"
