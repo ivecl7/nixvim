@@ -57,7 +57,7 @@
             "fe"
           ]
           [
-            "↩️ Last Session"
+            "↩️Last Session"
             "lua require('persistence').load({last=true})"
             "ql"
           ]
