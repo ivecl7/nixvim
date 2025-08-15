@@ -28,7 +28,6 @@ end
 return {
 	-- I. Auto add "\"
 	s({ trig = "inf", snippetType = "autosnippet", priority = 2000 }, { t("\\infty "), i(1) }, {}),
-	s({ trig = "int", snippetType = "autosnippet", priority = 2000 }, { t("\\int"), i(1) }, {}),
 	s({ trig = "leq", snippetType = "autosnippet", priority = 2000 }, { t("\\leq "), i(1) }, {}),
 	s({ trig = "lim", snippetType = "autosnippet", priority = 2000 }, { t("\\lim"), i(1) }, {}),
 	s({ trig = "par", snippetType = "autosnippet", priority = 2000 }, { t("\\partial "), i(1) }, {}),
@@ -56,6 +55,13 @@ return {
 	s({ trig = "Phi", snippetType = "autosnippet", priority = 2000 }, { t("\\Phi"), i(1) }, {}),
 	s({ trig = "Sigma", snippetType = "autosnippet", priority = 2000 }, { t("\\Sigma"), i(1) }, {}),
 	s({ trig = "Theta", snippetType = "autosnippet", priority = 2000 }, { t("\\Theta"), i(1) }, {}),
+	s({ trig = "lar", snippetType = "autosnippet", priority = 2000 }, { t("\\leftarrow"), i(1) }, {}),
+	s({ trig = "Lar", snippetType = "autosnippet", priority = 2000 }, { t("\\Leftarrow"), i(1) }, {}),
+	s({ trig = "rar", snippetType = "autosnippet", priority = 2000 }, { t("\\rightarrow"), i(1) }, {}),
+	s({ trig = "Rar", snippetType = "autosnippet", priority = 2000 }, { t("\\Rightarrow"), i(1) }, {}),
+	s({ trig = "lrar", snippetType = "autosnippet", priority = 2000 }, { t("\\leftrightarrow"), i(1) }, {}),
+	s({ trig = "int" }, { t("\\int"), i(1) }, {}),
+	s({ trig = "cong" }, { t("\\cong "), i(1) }, {}),
 	s({ trig = "cdot" }, { t("\\cdot "), i(1) }, {}),
 	s({ trig = "cdots" }, { t("\\cdots "), i(1) }, {}),
 	s({ trig = "vdots" }, { t("\\vdots "), i(1) }, {}),
