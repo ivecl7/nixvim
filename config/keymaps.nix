@@ -524,5 +524,23 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader>a";
+      action = "<Esc>/\\v[-+]?(\\d+)<CR>:nohlsearch<CR>";
+      options = {
+        desc = "Find next number";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>A";
+      action = "<Esc>?\\v[-+]\\?(\\d+)<CR>:nohlsearch<CR>";
+      options = {
+        desc = "Find prev number";
+        silent = true;
+      };
+    }
   ];
 }
