@@ -163,6 +163,22 @@ in
         action = "<plug>Vimwiki2HTMLBrowse<CR>";
       }
       {
+        mode = "n";
+        key = "<leader>r";
+        action.__raw = ''
+          function()
+            local current_line = vim.api.nvim_get_current_line()
+            if current_line:sub(1, 1) == ':' then
+              vim.cmd(current_line)
+            end
+          end
+        '';
+        options = {
+          desc = "run current line with vim commands";
+          silent = true;
+        };
+      }
+      {
         # Preview:
         # {{$%align%
         # _ <- your cursor
