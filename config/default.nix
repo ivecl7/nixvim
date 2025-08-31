@@ -59,5 +59,6 @@ _: {
     ./plugins/utils/oil.nix
     ./plugins/utils/persistence.nix
     ./plugins/utils/vimtex.nix
+    ./plugins/utils/aerial.nix
   ];
 }
