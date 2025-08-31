@@ -156,6 +156,22 @@ in
     ];
 
     # vimwiki: a plugin I sincerely recommend using
+    "after/ftplugin/vimwiki.lua".autoCmd = [
+      {
+        group = "filetypes";
+        event = [
+          "BufEnter"
+        ];
+        command = "lua vim.diagnostic.enable(false)";
+      }
+      {
+        group = "filetypes";
+        event = [
+          "InsertEnter"
+        ];
+        command = "lua vim.diagnostic.reset()";
+      }
+    ];
     "after/ftplugin/vimwiki.lua".keymaps = markdown_keymaps ++ [
       {
         mode = "n";
